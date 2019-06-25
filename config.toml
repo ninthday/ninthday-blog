@@ -1,20 +1,18 @@
-baseURL = "http://example.org/"
+baseURL = "https://ninthday.github.io/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Ninthday"
 theme = "m10c"
 paginate = 5
 
 [params]
   author = "Tuvix Shih (ninthday)"
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium."
+  description = "ninthday.dev"
   [[params.social]]
     name = "github"
     url = "https://github.com/ninthday"
   [[params.social]]
     name = "twitter"
     url = "https://twitter.com/JeffyShih"
-
-  # Red and black theme
   [params.style]
     darkestColor = "#d35050"
     darkColor = "#212121"
