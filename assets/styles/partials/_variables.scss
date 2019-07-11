@@ -10,8 +10,8 @@ $grey-lighter: rgb(219, 219, 219);
 $white-ter: rgb(244, 243, 241);
 $white-bis: rgb(250, 250, 250);
 $white: rgb(255, 255, 255);
-$green: rgb(0, 171, 107);
-$green-light: rgba(0, 171, 107, 0.5);
+$green: rgb(24, 188, 156);
+$green-light: rgba(24, 188, 156, 0.5);
 $green-invert: $green;
 
 /* Theme colors */
@@ -20,7 +20,7 @@ $primary-invert: $green-invert;
 $light: $white-ter;
 $dark: $grey-darker;
 $background: $white-ter;
-$code-background: rgb(246, 248, 250);
+$code-background: rgba(24, 188, 156, .15);
 $main-background: $white;
 
 /* Text colors */
@@ -44,9 +44,10 @@ $box-shadow-darker: rgba(0, 0, 0, 0.3);
 $family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", sans-serif;
 $family-monospace: "Fira Code", "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", Courier, monospace;
 $family-lobster: 'Lobster', cursive, $family-sans-serif;
+$family-gochi-hand: "Gochi Hand", cursive, $family-sans-serif;
 $size-1: 3rem;
-$size-2: 2.5rem;
-$size-3: 2rem;
+$size-2: 2rem;
+$size-3: 1.75rem;
 $size-4: 1.5rem;
 $size-5: 1.25rem;
 $size-6: 1rem;

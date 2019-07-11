@@ -72,8 +72,10 @@
   }
 
   & h1 {
+    border-bottom: 1px solid $border;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
     font-size: $size-2;
   }
 
@@ -132,9 +134,7 @@
 
   & tt,
   & code {
-    padding: 0;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
+    padding: .2em .3em;
     margin: 0;
     font-size: 0.9em;
     background-color: $code-background;

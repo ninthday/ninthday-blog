@@ -1,6 +1,6 @@
 ---
 title: "Hugo 靜態網頁部署至 GitHub Page"
-cover: "/images/cover.jpg"
+cover: "/images/hugo.png"
 tags: ["ubuntu", "hugo", "github"]
 date: 2019-06-26T23:25:47+08:00
 draft: false
