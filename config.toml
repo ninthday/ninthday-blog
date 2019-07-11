@@ -41,7 +41,7 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
 # Add your own params here
 [params]
   author = "Tuvix Shih"
-  bg = "images/grey-prism.svg"
+  bg = "images/manycats.jpg"
   avatar = "images/avatar.png"
   seotitle = "Ninthday Blog (SEO Version)"
   subtitle = "~ Keep It Simple & Stupid ~"
