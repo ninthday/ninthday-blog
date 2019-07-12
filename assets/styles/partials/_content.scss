@@ -134,9 +134,10 @@
 
   & tt,
   & code {
-    padding: .2em .3em;
+    padding: .2em 0;
     margin: 0;
     font-size: 0.9em;
+    border-radius: 3px;
     background-color: $code-background;
     font-family: $family-monospace;
 
