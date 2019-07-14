@@ -10,6 +10,8 @@ draft: false
 
 一直以來都是使用 LAMP（Linux + Apache + MySQL + PHP） 架構居多，基於 Apache 是個胖子加上 MySQL 的黑化...，嘗試開始使用 LEMP 的組合。LEMP 為 Linux + Nginx + MariaDB + PHP，後面敘述為在 ubuntu 18.04 中的安裝方式與設定。
 
+<!--more-->
+
 # Nginx 伺服器
 
 ## 安裝 Nginx 網頁伺服器
