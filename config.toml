@@ -5,7 +5,7 @@ theme = "hugo-nuo"
 enableRobotsTXT = true
 PygmentsCodeFences = true
 canonifyurls = true
-uglyurls = true
+# uglyurls = true
 
 # Disqus Username
 disqusShortname = "ninthday"
@@ -36,16 +36,16 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
   name = "Tags"
   weight = 30
   identifier = "tags"
-  url = "/tags/"
+  url = "/tags"
 
 # Add your own params here
 [params]
   author = "Tuvix Shih"
   bg = "images/manycats.jpg"
   avatar = "images/avatar.png"
-  seotitle = "Ninthday Blog (SEO Version)"
+  seotitle = "Ninthday Blog"
   subtitle = "~ Live Long and Prosper 🖖 ~"
-  description = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."
+  description = "Ninthday 的部落格"
   paginate = 10
 
   # Choose your social networks
@@ -53,8 +53,8 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
   github = "ninthday"
   twitter = "jeffyshih"
   linkedin = "shiuh-feng-shih"
-  #weibo = "weibo_username"
-  #wechat= "images/qrcode.jpg"  # Replace with your wechat qrcode image
+  # weibo = "weibo_username"
+  # wechat= "images/qrcode.jpg"  # Replace with your wechat qrcode image
   # facebook = "facebook_username"
   # google = "googlplus_id_number"
   # instagram = "instagram_username"

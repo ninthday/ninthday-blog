@@ -3,7 +3,7 @@ title: "保留 Configparser 儲存後英文字母大小寫"
 cover: "/images/python.png"
 tags: ["python"]
 date: 2019-07-20T10:17:15+08:00
-draft: true
+draft: false
 ---
 
 對於程式執行階段，因為可能在不同設備或是環境有不同設定內容，使用 `.ini` INI 設定檔讀取或寫入的方式管理相當方便。利用 Python 內建的 `ConfigParser` 來處理 INI 設定檔相當方便，但在讀取後再儲存保留時，會將內容全都轉換為小寫字母。在區分字母大小寫的 Linux 系統中，希望能夠保留原來字母大小，便於閱讀和再使用。
