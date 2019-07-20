@@ -67,6 +67,7 @@ theme = "m10c"
 hugo server -t m10c
 ```
 > `-t` 之後接的是套用的佈景主題名稱
+> `-D` 可以瀏覽草稿內容
 
 # 3. 部署至 GitHub
 GitHub Pages 有兩種形態，一種是使用者（組織）、一種為專案性質。
