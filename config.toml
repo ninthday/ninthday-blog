@@ -1,4 +1,4 @@
-baseURL = "https://ninthday.github.io/"
+baseURL = "https://ninthday.github.io"
 languageCode = "zh-TW"
 title = "have a NINTHDAY"
 theme = "hugo-nuo"
@@ -24,7 +24,7 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
   name = "Home"
   weight = 10
   identifier = "home"
-  url = "/"
+  url = "/post"
 
 [[menu.main]]
   name = "Works"
@@ -87,3 +87,19 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
   # https://www.bing.com/toolbox/webmaster/
   #msValidate = "22596E34341DD1D17D6022C44647E587"
 
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
