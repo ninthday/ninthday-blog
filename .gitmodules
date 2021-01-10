@@ -4,4 +4,5 @@
 	branch = master
 [submodule "themes/hugo-nuo"]
 	path = themes/hugo-nuo
-	url = https://github.com/laozhu/hugo-nuo.git
+	url = github:ninthday/hugo-nuo.git
+    branch = master
