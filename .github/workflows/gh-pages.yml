@@ -4,29 +4,51 @@ on:
   push:
     branches:
       - main  # Set a branch that will trigger a deployment
-  pull_request:
 
 jobs:
-  deploy:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+    deploy:
+        env:
+          HUGO_VERSION: ${{ github.sha }}
+          TZ: Asia/Taipei
+        runs-on: ubuntu-22.04
+        
+        steps:
+            - name: Git checkout
+              uses: actions/checkout@v3
+              with:
+                fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+                submodules: true # Fetch Hugo themes (true OR recursive)
+            
+            - name: Set git config core.quotepath false # https://github.com/gohugoio/hugo/issues/9810#issuecomment-1107519804
+              run: git config --global core.quotepath false
+  
+            - name: Use Node.js
+              uses: actions/setup-node@v1
+              with:
+                node-version: '16.x'
+                
+            - name: Install Theme
+              run: cd themes/hugo-theme-luna && yarn install --production
+                
+            - name: Install PostCSS-CLI
+              run: npm install postcss-cli -g
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-          # extended: true
+            - name: Setup hugo
+              uses: peaceiris/actions-hugo@v2
+              with:
+                hugo-version: 'latest'
+                extended: true
 
-      - name: Build
-        run: hugo --minify
+            - name: Build Hugo
+              run: echo "HUGO_VERSION -> $HUGO_VERSION" && hugo --gc --minify --cleanDestinationDir
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+            - name: Hugo-Encrypt
+              run: cd themes/hugo-theme-luna && node ./hugo-encrypt.js
+
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                personal_token: ${{ secrets.TOKEN }}
+                publish_branch: master
+                publish_dir: ./public
+                force_orphan: true
