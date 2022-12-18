@@ -48,7 +48,10 @@ jobs:
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
               with:
-                personal_token: ${{ secrets.TOKEN }}
-                publish_branch: master
+                personal_token: ${{ secrets.DeployToken }}
+                external_repository: "ninthday/ninthday.github.io"
+                publish_branch: main
                 publish_dir: ./public
                 force_orphan: true
+                user_name: ninthday
+                user_email: tuvix@ninthday.info
