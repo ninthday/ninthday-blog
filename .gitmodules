@@ -1,0 +1,4 @@
+[submodule "themes/hugo-theme-luna"]
+	path = themes/hugo-theme-luna
+	url = https://github.com/ninthday/hugo-theme-luna.git
+	branch = master
