@@ -55,3 +55,4 @@ jobs:
                 force_orphan: true
                 user_name: ninthday
                 user_email: tuvix@ninthday.info
+                cname: blog.ninthday.me
