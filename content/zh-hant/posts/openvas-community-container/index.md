@@ -6,7 +6,7 @@ slug: "openvas-community-container"
 featured_image: "greenbone-banner.jpg"
 tags: ["linux","docker"]
 categories: ["linux","docker"]
-draft: true
+draft: false
 ---
 
 OpenVAS（Open Vulnerability Assessment Scanner）是一款開源的弱點掃描檢測工具，目前是由 [Greenbone](https://www.greenbone.net/) 維護，能夠持續的更新 NVT，SCAP...等弱點資料庫，對已知的漏洞及弱點進行掃描。OpenVAS 同時有 community 及 commercial 版本，community 使用的是 Greenbone Community Feed，沒有官方的技術性支援。
