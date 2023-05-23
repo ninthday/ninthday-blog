@@ -5,7 +5,7 @@ date: 2023-04-22T14:55:01+08:00
 slug: "openvas-community-container"
 featured_image: "greenbone-banner.jpg"
 tags: ["linux","docker"]
-categories: ["linux","docker"]
+categories: ["security","docker"]
 draft: false
 ---
 
@@ -348,7 +348,7 @@ $ docker compose -f docker-compose.yml -p greenbone-community-edition pull
 $ docker compose -f docker-compose.yml -p greenbone-community-edition up -d
 ```
 
-### 2.  Greenbone Community Feed 更新
+### 2. Greenbone Community Feed 更新
 Greenbone Community Feed 的同步更新有兩個部分組成：
 1. 拉取新的 data container images
 2. 透過 daemon 加載到記憶體和資料庫中
