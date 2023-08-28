@@ -6,7 +6,7 @@ slug: "host-website-on-gcs"
 featured_image: "cloud-cover.png"
 tags: ["GCP","GCS"]
 categories: ["GCP"]
-draft: true
+draft: false
 ---
 
 在開始閱讀內文前，假設我們已經在 Google Cloud platform 完成建立可以使用的 Project。
